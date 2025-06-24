@@ -28,7 +28,7 @@ export async function createCat(cat: CatCreate): Promise<Cat> {
 
 export async function updateCatSalary(id: number, salary: number): Promise<Cat> {
     const response = await fetch(`${API_BASE_URL}/cats/${id}/`, {
-        method: 'PATCH', // or PUT, depending on your API
+        method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
         },
