@@ -41,7 +41,7 @@ export async function deleteCat(id: number): Promise<void> {
     const response = await fetch(`${API_BASE_URL}/cats/${id}/`, {
         method: 'DELETE',
     });
-    if (response.status !== 204) {
+    if (response.status !== 200) {
         throw new Error('Failed to delete cat');
     }
 }
