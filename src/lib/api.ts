@@ -1,6 +1,6 @@
 import { Cat, CatCreate } from '@/types/cat';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 async function handleResponse<T>(response: Response): Promise<T> {
     if (!response.ok) {
